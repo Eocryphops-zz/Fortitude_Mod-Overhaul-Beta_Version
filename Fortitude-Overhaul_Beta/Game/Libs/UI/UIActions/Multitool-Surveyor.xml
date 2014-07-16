@@ -1,0 +1,166 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Input:Key" pos="-950,-370,0" flags="0">
+   <Inputs Key="f6" NonDevMode="1"/>
+  </Node>
+  <Node Id="4" Class="String:SetString" pos="50,-770,0" flags="0">
+   <Inputs In="0"/>
+  </Node>
+  <Node Id="5" Class="Math:Add" pos="220,-710,0" flags="0">
+   <Inputs A="0" B="1"/>
+  </Node>
+  <Node Id="9" Class="Game:LocalPlayer" pos="-220,-290,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="10" Class="Entity:GetPos" pos="50,-390,0" flags="0" InHideMask="3" OutHideMask="63">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="11" Class="String:Concat" pos="470,-410,0" flags="0">
+   <Inputs String1="Vector_Save" String2=""/>
+  </Node>
+  <Node Id="12" Class="Logic:Once" pos="-90,-740,0" flags="0" InHideMask="127" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="16" Class="String:SetString" pos="100,-560,0" flags="0">
+   <Inputs In="0"/>
+  </Node>
+  <Node Id="17" Class="HUD:DisplayDebugMessage" pos="1170,-400,0" flags="0">
+   <Inputs entityId="0" message="" DisplayTime="0" posX="400" posY="420" fontSize="2" clr_Color="1,1,1" centered="0"/>
+  </Node>
+  <Node Id="18" Class="HUD:DisplayDebugMessage" pos="660,-70,0" flags="0" InHideMask="1023" OutHideMask="3">
+   <Inputs entityId="0" message="" DisplayTime="0" posX="400" posY="400" fontSize="2" clr_Color="1,1,1" centered="0"/>
+  </Node>
+  <Node Id="19" Class="Start" pos="-680,-290,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="20" Class="Logic:Any" pos="-90,-910,0" flags="0" InHideMask="63" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="21" Class="Logic:Once" pos="-260,-970,0" flags="0" InHideMask="127" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="22" Class="String:SetString" pos="-553.63391,-968.85931,0" flags="0">
+   <Inputs In="0"/>
+  </Node>
+  <Node Id="28" Class="Xml:SaveDocument" pos="2190,-110,0" flags="0">
+   <Inputs File="SurveyorData" Location="1" Overwrite="1"/>
+  </Node>
+  <Node Id="29" Class="Xml:NewChild" pos="690,-260,0" flags="0">
+   <Inputs Name="" Active="1"/>
+  </Node>
+  <Node Id="32" Class="Xml:SetAttribute" pos="850,-140,0" flags="0">
+   <Inputs Name="Pos"/>
+  </Node>
+  <Node Id="33" Class="Xml:NewDocument" pos="-390,-170,0" flags="0">
+   <Inputs Root="Prefab"/>
+  </Node>
+  <Node Id="35" Class="String:SetString" pos="250,-380,0" flags="0">
+   <Inputs In="object"/>
+  </Node>
+  <Node Id="36" Class="Xml:SetAttribute" pos="1720,-260,0" flags="0">
+   <Inputs Name="Type"/>
+  </Node>
+  <Node Id="37" Class="Xml:SetAttribute" pos="1000,-310,0" flags="0">
+   <Inputs Name="Name"/>
+  </Node>
+  <Node Id="38" Class="String:SetString" pos="1400,-200,0" flags="0">
+   <Inputs In="Brush"/>
+  </Node>
+  <Node Id="39" Class="Xml:GetRoot" pos="690,-510,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="40" Class="Xml:SetAttribute" pos="1720,-90,0" flags="0">
+   <Inputs Name="Prefab"/>
+  </Node>
+  <Node Id="41" Class="String:SetString" pos="1400,-110,0" flags="0">
+   <Inputs In="objects/default/capsule.cgf"/>
+  </Node>
+  <Node Id="42" Class="Math:Round" pos="280,-460,0" flags="0">
+   <Inputs In="0"/>
+  </Node>
+  <Node Id="43" Class="Xml:SetAttribute" pos="180,-120,0" flags="0">
+   <Inputs Name="Name"/>
+  </Node>
+  <Node Id="44" Class="String:SetString" pos="-130,-80,0" flags="0">
+   <Inputs In="MultiTool_Surveyor_Data"/>
+  </Node>
+  <Node Id="1673" Class="HUD:DisplayTimedDebugMessage" pos="1120,100,0" flags="0">
+   <Inputs entityId="0" Message="Failed - Entity -Spawn" DisplayTime="2" PosX="200" PosY="390" FontSize="4"/>
+  </Node>
+  <Node Id="1676" Class="HUD:DisplayTimedDebugMessage" pos="1120,-20,0" flags="0">
+   <Inputs entityId="0" Message="Success - Entity Spawned" DisplayTime="2" PosX="200" PosY="390" FontSize="4"/>
+  </Node>
+  <Node Id="1754" Class="Entity:Spawn" pos="670,20,0" flags="0">
+   <Inputs Class="Phacops_Survey_Flare" Name="Phacops_Survey_Flare" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+  </Node>
+  <Node Id="1755" Class="Xml:SetAttribute" pos="1940,-230,0" flags="0">
+   <Inputs Name="LodRatio"/>
+  </Node>
+  <Node Id="1756" Class="String:SetString" pos="1620,-170,0" flags="0">
+   <Inputs In="255"/>
+  </Node>
+  <Node Id="1757" Class="Xml:SetAttribute" pos="1940,-160,0" flags="0">
+   <Inputs Name="ViewDistRatio"/>
+  </Node>
+  <Node Id="1758" Class="Xml:SetAttribute" pos="1720,-20,0" flags="1">
+   <Inputs Name="Material"/>
+  </Node>
+  <Node Id="1759" Class="String:SetString" pos="1400,-40,0" flags="1">
+   <Inputs In="Materials/LightPod"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="10" nodeOut="1" portIn="Get" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="1" portIn="Input1" portOut="Released" enabled="1"/>
+  <Edge nodeIn="22" nodeOut="1" portIn="Set" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="4" portIn="A" portOut="Out" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="5" portIn="In" portOut="out" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="5" portIn="Set" portOut="out" enabled="1"/>
+  <Edge nodeIn="10" nodeOut="9" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="10" portIn="Show" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="10" portIn="message" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="10" portIn="Value" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="1754" nodeOut="10" portIn="Pos" portOut="Pos" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="11" portIn="Show" portOut="Out" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="11" portIn="message" portOut="Out" enabled="1"/>
+  <Edge nodeIn="37" nodeOut="11" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="11" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="12" portIn="Set" portOut="Out" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="16" portIn="Reset" portOut="Out" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="16" portIn="in6" portOut="Out" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="16" portIn="Set" portOut="Out" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="16" portIn="In" portOut="Out" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="19" portIn="update" portOut="output" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="19" portIn="Execute" portOut="output" enabled="1"/>
+  <Edge nodeIn="4" nodeOut="20" portIn="In" portOut="out" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="21" portIn="in1" portOut="Out" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="22" portIn="Input1" portOut="Out" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="29" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="37" nodeOut="29" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="32" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="41" nodeOut="32" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="1756" nodeOut="32" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="1759" nodeOut="32" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="44" nodeOut="33" portIn="Set" portOut="Success" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="35" portIn="Set" portOut="Out" enabled="1"/>
+  <Edge nodeIn="29" nodeOut="35" portIn="Name" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1754" nodeOut="35" portIn="Spawn" portOut="Out" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="38" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="38" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="29" nodeOut="39" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="40" nodeOut="41" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="40" nodeOut="41" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="42" portIn="String2" portOut="outRounded" enabled="1"/>
+  <Edge nodeIn="43" nodeOut="44" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="43" nodeOut="44" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1673" nodeOut="1754" portIn="Trigger" portOut="Failed" enabled="1"/>
+  <Edge nodeIn="1755" nodeOut="1756" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1755" nodeOut="1756" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1757" nodeOut="1756" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1757" nodeOut="1756" portIn="Value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="1757" portIn="Execute" portOut="Success" enabled="1"/>
+  <Edge nodeIn="1758" nodeOut="1759" portIn="Execute" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1758" nodeOut="1759" portIn="Value" portOut="Out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

@@ -1,0 +1,561 @@
+<Vehicle name="The_Sepulcher"  actionMap="landvehicle" type="1">
+ <Physics pushable="0" retainGravity="1">
+  <Buoyancy waterDensity="50" waterResistance="3000" waterDamping="500"/>
+  <Simulation maxTimeStep="0.02" minEnergy="0.0020000001" maxLoggedCollisions="2"/>
+ </Physics>
+ <Damages submergedRatioMax="0.85" submergedDamageMult="0.33" collDamageThreshold="25" groundCollisionMinMult="1.3" groundCollisionMaxMult="1.4" groundCollisionMinSpeed="8" groundCollisionMaxSpeed="22" damageThresholdSlow="20000" damageThresholdMedium="30000" damageThresholdFast="50000" vehicleCollisionDestructionSpeed="50">
+  <DamageMultipliers>
+   <DamageMultiplier damageType="bullet" multiplier="0.0"/>
+   <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   <DamageMultiplier damageType="collision" multiplier="0.0"/>
+  </DamageMultipliers>
+ </Damages>
+ <Components>
+  <Component name="Hull" damageMax="20000000" position="0,0.049199998,0.89999998" size="2.2500999,4.6999002,1.8" useBoundsFromParts="1" useDamageLevels="0" id="idHull">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="10"/>
+    <DamageMultiplier damageType="collision" multiplier="0" id="idCollisionHull"/>
+   </DamageMultipliers>
+  </Component>
+  <Component name="hood" position="0,0,0" size="0,0,0" damageMax="20000000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.25"/>
+    <DamageMultiplier damageType="melee" multiplier="0.5"/>
+    <DamageMultiplier damageType="collision" multiplier="1"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="hoodDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="hoodDamaged" deactivateMask="hoodDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="bumper_front" position="0,0,0" size="0,0,0" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin=".5">
+     <Effect effect="BumperDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin=".75">
+     <Effect effect="BumperDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1">
+     <Effect effect="BumperDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="bumperFrontDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="bumperFrontDamaged" deactivateMask="bumperFrontDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="bumper_rear" position="0,0,0" size="0,0,0" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin=".5">
+     <Effect effect="BumperDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin=".75">
+     <Effect effect="BumperDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1">
+     <Effect effect="BumperDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="DetachPart" damageRatioMin="1">
+     <DetachPart part="bumper_rear"/>
+    </DamageBehavior>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="bumperRearDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="bumperRearDamaged" deactivateMask="bumperRearDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="right_front_fender" position="0,0,0" size="0,0,0" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin=".5">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin=".75">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="rightFrontFenderDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="rightFrontFenderDamaged" deactivateMask="rightFrontFenderDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="left_front_fender" position="0,0,0" size="0,0,0" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin=".5">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin=".75">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="leftFrontFenderDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="leftFrontFenderDamaged" deactivateMask="leftFrontFenderDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="left_rear_fender" position="0,0,0" size="0,0,0" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin=".5">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin=".75">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="leftRearFenderDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="leftRearFenderDamaged" deactivateMask="leftRearFenderDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="right_rear_fender" position="0,0,0" size="0,0,0" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin=".5">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin=".75">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1">
+     <Effect effect="FenderDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="rightRearFenderDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="rightRearFenderDamaged" deactivateMask="rightRearFenderDented"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="door_left" damageMax="20000000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.0"/>
+    <DamageMultiplier damageType="collision" multiplier="0.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="leftFrontDoorDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="leftFrontDoorDamaged" deactivateMask="leftFrontDoorDented"/>
+    <DamageBehavior class="DetachPart" damageRatioMin="1">
+     <DetachPart part="door_left"/>
+    </DamageBehavior>
+    <DamageBehavior class="SeatStatus" damageRatioMin="1" flags="1" seatName="driver"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="door_right" damageMax="1000" useBoundsFromParts="1" hullAffection="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.15"/>
+    <DamageMultiplier damageType="collision" multiplier="1.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.5" activateMask="rightFrontDoorDented"/>
+    <DamageBehavior class="ClipMask" damageRatioMin="0.75" activateMask="rightFrontDoorDamaged" deactivateMask="rightFrontDoorDented"/>
+    <DamageBehavior class="DetachPart" damageRatioMin="1">
+     <DetachPart part="door_right"/>
+    </DamageBehavior>
+    <DamageBehavior class="SeatStatus" damageRatioMin="1" flags="1" seatName="passenger"/>
+   </DamageBehaviors>
+  </Component>
+  <Component name="engine" damageMax="4000000" position="0,2.35,1.0" size="1.5,1.4,0.35" useBoundsFromParts="0" hullAffection="0.1" isOnlyDamageableByPlayer="0" id="idEngine" useDamageLevels="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="0.0"/>
+    <DamageMultiplier damageType="collision" multiplier="0.0" id="idCollisionEngine"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="Effect" damageRatioMin="0.2" damageRatioMax="0.4">
+     <Effect effect="Engine1" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="0.4" damageRatioMax="0.8">
+     <Effect effect="Engine2" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="0.4" damageRatioMax="0.8">
+     <Effect effect="HoodDamage" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="0.8">
+     <Effect effect="EngineSMOKE" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Burn" damageRatioMin="1.0">
+     <Burn helper="enginePos" damage="0" selfDamage="300" radius="1.0" interval="0.12"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect" damageRatioMin="1.0">
+     <Effect effect="Engine3" disableAfterExplosion="1"/>
+    </DamageBehavior>
+   </DamageBehaviors>
+  </Component>
+  <Component name="wheel_1" damageMax="2000" position="0,0,0" size="0,0,0" useBoundsFromParts="1" hullAffection="0" isOnlyDamageableByPlayer="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="1000.0"/>
+    <DamageMultiplier damageType="collision" multiplier="0.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="BlowTire" damageRatioMin="1">
+     <BlowTire angImpulseScaleMin="-0.09" angImpulseScaleMax="0.09" linImpulseScaleMin="0.08" linImpulseScaleMax="0.08" linImpulseSpeedMax="10.0"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect">
+     <Effect effect="BlowTireFL" disableAfterExplosion="1"/>
+    </DamageBehavior>
+   </DamageBehaviors>
+  </Component>
+  <Component name="wheel_2" damageMax="2000" position="0,0,0" size="0,0,0" useBoundsFromParts="1" hullAffection="0" isOnlyDamageableByPlayer="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="1000.0"/>
+    <DamageMultiplier damageType="collision" multiplier="0.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="BlowTire" damageRatioMin="1">
+     <BlowTire angImpulseScaleMin="-0.09" angImpulseScaleMax="0.09" linImpulseScaleMin="0.08" linImpulseScaleMax="0.08" linImpulseSpeedMax="10.0"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect">
+     <Effect effect="BlowTireRL" disableAfterExplosion="1"/>
+    </DamageBehavior>
+   </DamageBehaviors>
+  </Component>
+  <Component name="wheel_3" damageMax="2000" position="0,0,0" size="0,0,0" useBoundsFromParts="1" hullAffection="0" isOnlyDamageableByPlayer="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="1000.0"/>
+    <DamageMultiplier damageType="collision" multiplier="0.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="BlowTire" damageRatioMin="1">
+     <BlowTire angImpulseScaleMin="-0.09" angImpulseScaleMax="0.09" linImpulseScaleMin="0.08" linImpulseScaleMax="0.08" linImpulseSpeedMax="10.0" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect">
+     <Effect effect="BlowTireFR" disableAfterExplosion="1"/>
+    </DamageBehavior>
+   </DamageBehaviors>
+  </Component>
+  <Component name="wheel_4" damageMax="2000" position="0,0,0" size="0,0,0" useBoundsFromParts="1" hullAffection="0" isOnlyDamageableByPlayer="0">
+   <DamageMultipliers>
+    <DamageMultiplier damageType="bullet" multiplier="1000.0"/>
+    <DamageMultiplier damageType="collision" multiplier="0.0"/>
+    <DamageMultiplier damageType="melee" multiplier="0.0"/>
+   </DamageMultipliers>
+   <DamageBehaviors>
+    <DamageBehavior class="BlowTire" damageRatioMin="1">
+     <BlowTire angImpulseScaleMin="-0.09" angImpulseScaleMax="0.09" linImpulseScaleMin="0.08" linImpulseScaleMax="0.08" linImpulseSpeedMax="10.0" disableAfterExplosion="1"/>
+    </DamageBehavior>
+    <DamageBehavior class="Effect">
+     <Effect effect="BlowTireRR" disableAfterExplosion="1"/>
+    </DamageBehavior>
+   </DamageBehaviors>
+  </Component>
+  <Component name="EnterLeftFront" damageMax="0" position="-1.25,0.0,1.15" size="0.35,1.25,1.35" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="EnterRightFront" damageMax="0" position="1.25,0.0,1.15" size="0.35,1.25,1.35" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="EnterPassenger" damageMax="0" position="0,0,0" size="0,0,0.1" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+  <Component name="gunnerEnterTop" damageMax="0" position="0.1495,-0.30000001,2.8501" size="1,1,1" useBoundsFromParts="0">
+   <DamageBehaviors />
+  </Component>
+ </Components>
+ <Parts>
+  <Part name="body" class="Animated" mass="1000" disablePhysics="0" isHidden="0">
+   <Parts>
+   <Part name="turret" class="AnimatedJoint" component="turret" mass="250">
+     <Parts>
+      <Part name="cannon_base" class="AnimatedJoint" component="turret" mass="0">
+       <Parts>
+        <Part name="cannon" class="AnimatedJoint" component="turret" mass="500" useOption="0" id="idCannonPart">
+         <AnimatedJoint filename="" filenameDestroyed="" id="idCannonAnimatedJoint"/>
+        </Part>
+       </Parts>
+       <AnimatedJoint />
+      </Part>
+     </Parts>
+     <AnimatedJoint />
+    </Part>
+    <Part name="hull" class="AnimatedJoint" component="Hull">
+     <Parts>
+      <Part name="hood" class="AnimatedJoint" disableCollision="1" component="hood"/>
+      <Part name="hull_collision01" class="AnimatedJoint" disableCollision="0" component="hull"/>
+      <Part name="hull_collision02" class="AnimatedJoint" disableCollision="0" component="hull"/>
+     </Parts>
+    </Part>
+    <Part name="engine" class="AnimatedJoint" disableCollision="1" component="engine"/>
+    <!--<Part name="fortitude_armor" class="Static" component="" helper="" mass="250" position="0,0,0" disablePhysics="1" disableCollision="0" isHidden="0">
+     <Static filename="objects/vehicles/musclecar_variant/variants/musclecar_fortitude-coupe.cgf"/>
+    </Part>-->
+    <Part name="wheel1" class="SubPartWheel" component="wheel_1" mass="1000">
+     <SubPartWheel axle="0" density="80" damping="-0.8" driving="0" lenMax="0.40000001" maxFriction="1" minFriction="1" slipFrictionMod="0.3" stiffness="0" suspLength="0.25" rimRadius="0.35" torqueScale="1.0"/>
+    </Part>
+    <Part name="wheel2" class="SubPartWheel" component="wheel_2" mass="1000">
+     <SubPartWheel axle="1" density="80" damping="-0.8" driving="1" lenMax="0.40000001" maxFriction="1" minFriction="1" slipFrictionMod="0.3" stiffness="0" suspLength="0.25" rimRadius="0.35" torqueScale="1.0"/>
+    </Part>
+    <Part name="wheel3" class="SubPartWheel" component="wheel_3" mass="1000">
+     <SubPartWheel axle="0" density="80" damping="-0.8" driving="0" lenMax="0.40000001" maxFriction="1" minFriction="1" slipFrictionMod="0.3" stiffness="0" suspLength="0.25" rimRadius="0.35" torqueScale="1.0"/>
+    </Part>
+    <Part name="wheel4" class="SubPartWheel" component="wheel_4" mass="1000">
+     <SubPartWheel axle="1" density="80" damping="-0.8" driving="1" lenMax="0.40000001" maxFriction="1" minFriction="1" slipFrictionMod="0.3" stiffness="0" suspLength="0.25" rimRadius="0.35" torqueScale="1.0"/>
+    </Part>
+   </Parts>
+   <Animated filename="objects/vehicles/fortitude/sepulcher/sepulcher.cga" filenameDestroyed="objects/vehicles/fortitude/sepulcher/sepulcher.cga" id="idAnimatedPart"/>
+  </Part>
+  <Part name="massBox" class="MassBox" mass="1000" position="0,-0.2,0" disablePhysics="0" disableCollision="0" isHidden="0">
+   <MassBox size="2.5,2.5,0.2" drivingOffset="-2.5"/>
+  </Part>
+  <Part name="massBox2" class="MassBox" component="" mass="2000" position="0,-0.3,0.25" disablePhysics="0" disableCollision="0" isHidden="0">
+   <MassBox size="0.3,2,0.4"/>
+  </Part>
+  <Part name="massBox3" class="MassBox" component="" mass="1000" position="0.5,0,0" disablePhysics="0" disableCollision="0" isHidden="0">
+   <MassBox size="0.30000001,1.5,0.20"/>
+  </Part>
+  <Part name="massBox4" class="MassBox" component="" mass="1000" position="-0.5,0,0" disablePhysics="0" disableCollision="0" isHidden="0">
+   <MassBox size="0.30000001,1.5,0.20"/>
+  </Part>
+ </Parts>
+ <Helpers>
+  <Helper name="driverEnterPos" position="-1.9486,-0.0255,0" direction="1,0,0" part="body"/>
+  <Helper name="driverSitPos" position="0.05,-0.9,0.75" direction="0,1,0" part="body"/>
+  <Helper name="driverExitPos" position="-1.8309,-0.4597,0" direction="0,1,0" part="body"/>
+  <Helper name="driverExitDivePos" position="-2.2751,-0.0178,0.5861" direction="0,1,0" part="body"/>
+  <Helper name="driverExitWindshieldPos" position="0.01,1.2734,1.0778" direction="0,1,0" part="body"/>
+  <Helper name="driverExitRollPos" position="-1.2,0.2,0.25" direction="-1,0,0" part="body"/>
+  <Helper name="exhaustPos" position="0.1,-1.5,0.3" direction="0.5345,-0.8018,0.2673" part="body"/>
+  <Helper name="exhaustPos02" position="-0.1,-1.5,0.3" direction="0.5345,-0.8018,0.2673" part="body"/>
+  <Helper name="dashboardPos" position="0.1316,0.3734,1.2397" direction="0,1,0.0029" part="body"/>
+  <Helper name="centerPos" position="0,-0.1099,0.9298" direction="0,1,0.0029" part="body"/>
+  <Helper name="enginePos" position="0,2.35,1" direction="0,1,0.0029" part="body"/>
+  <Helper name="hullSmoke" position="0,0,0.15" direction="0,1,0.0029" part="body"/>
+  <Helper name="burningPos" position="0,2.15,1.05" direction="0,1,0.0029" part="body"/>
+  <Helper name="fuelTank" position="0,-2,0.15" direction="0,1,0.0029" part="body"/>
+  <Helper name="wheelFrontLeft" position="-1.015,1.8944,0" direction="0,1,0" part="body"/>
+  <Helper name="wheelFrontRight" position="1.015,1.8944,0" direction="0,1,0" part="body"/>
+  <Helper name="wheelRearLeft" position="-1.015,-1.8944,0" direction="0,1,0" part="body"/>
+  <Helper name="wheelRearRight" position="1.015,-1.8944,0" direction="0,1,0" part="body"/>
+  <Helper name="zombieTailgateCenter" position="0.0,-2.7,-0.38605" direction="0,1,0" part="body"/>
+  <Helper name="vehicleHitHoodCenter" position="0,2.9257,0.9641" direction="0,1,0" part="body"/>
+  <Helper name="vehicleHitHoodLeft" position="-0.6,2.9257,0.9641" direction="0,1,0" part="body"/>
+  <Helper name="vehicleHitHoodRight" position="0.6,2.9257,0.9641" direction="0,1,0" part="body"/>
+  <Helper name="vehicleHitTailgateCenter" position="0,-3.5477,-0.1861" direction="0,1,0" part="body"/>
+ </Helpers>
+ <Attachments>
+  <Attachment name="TailgateCenter" helper="zombieTailgateCenter"/>
+ </Attachments>
+ <Actions>
+  <Action class="Enter">
+   <Activations>
+    <Activation type="OnUsed" param1="component" param2="EnterLeftFront"/>
+   </Activations>
+   <Enter>
+    <Seats>
+     <Seat value="driver"/>
+    </Seats>
+   </Enter>
+  </Action>
+  <Action class="Enter">
+   <Activations>
+    <Activation type="OnUsed" param1="component" param2="EnterRightFront"/>
+   </Activations>
+   <Enter>
+    <Seats>
+     <Seat value="passenger"/>
+    </Seats>
+   </Enter>
+  </Action>
+  <Action class="Enter">
+   <Activations>
+    <Activation type="OnUsed" param1="component" param2="EnterPassenger"/>
+   </Activations>
+   <Enter>
+    <Seats>
+     <Seat value="passenger"/>
+    </Seats>
+   </Enter>
+  </Action>
+ </Actions>
+ <Seats>
+  <Seat name="driver" part="body" enterHelper="driverEnterPos" exitHelper="driverExitPos" movePassengerOnExit="1" sitHelper="driverSitPos" isDriver="1" AimPart="" disableStopAllAnimationsOnEnter="1" seatGroupIndex="1" remotelyUseActionsFromSeat="gunner" id="idSeatDriver" locked="AI" agSeatNumber="0">
+   <Views>
+    <View class="FirstPerson" canRotate="1">
+     <FirstPerson offset="0,0,0" relativeToHorizon="0.5"/>
+    </View>
+    <View class="ActionThirdPerson" canRotate="1" rotationMax="0,0,65">
+     <ActionThirdPerson cameraPosOffset="0,-1.25,0" cameraAimOffset="0,0,0.5" lagSpeed="3" velocityMult="-2,0.029999999,2"/>
+    </View>
+    <View class="ThirdPerson" canRotate="0" rotationMin="0,0,45" rotationMax="0,0,45" rotationInit="0,0,45">
+     <ThirdPerson distance="10" heightOffset="1" speed="1"/>
+    </View>
+    <View class="ThirdPerson" canRotate="0" rotationMin="0,0,90" rotationMax="0,0,90" rotationInit="0,0,90">
+     <ThirdPerson distance="10" heightOffset="1" speed="1"/>
+    </View>
+    <View class="ThirdPerson" canRotate="0" rotationMin="0,0,180" rotationMax="0,0,180" rotationInit="0,0,180">
+     <ThirdPerson distance="10" heightOffset="1" speed="1"/>
+    </View>
+   </Views>
+   <SeatActions>
+    <SeatAction class="Sound">
+     <Sound sound="Sounds/vehicles:8_vintage_muscle:horn" helper="driverSitPos"/>
+    </SeatAction>
+    <SeatAction class="Echo">
+     <Echo aggroRadius="15.0" echoRadius="25.0" echoDuration="30.0" disturbanceValue="5.0" repeatDelay="1.0"/>
+    </SeatAction>
+   </SeatActions>
+   <Sounds inout="0" mood="0.60000002" id="idSeatSoundsLF"/>
+  </Seat>
+  <Seat name="driverAI" part="" enterHelper="driverEnterPos" exitHelper="driverExitPos" movePassengerOnExit="1" sitHelper="driverSitPos" isDriver="0" AimPart="" disableStopAllAnimationsOnEnter="1" seatGroupIndex="11" agSeatNumber="10"/>
+ </Seats>
+ <SeatGroups>
+  <SeatGroup name="Cabin">
+   <Seats>
+    <Seat value="driver"/>
+   </Seats>
+  </SeatGroup>
+ </SeatGroups>
+<MovementParams>
+  <ArcadeWheeled steerSpeed="90" steerSpeedMin="110" kvSteerMax="27" v0SteerMax="40" steerRelaxation="110" vMaxSteerMax="22" pedalLimitMax="0" rpmRelaxSpeed="2" rpmInterpSpeed="4" rpmGearShiftSpeed="2">
+   <Handling>
+    <Power acceleration="18" decceleration="2" topSpeed="55" reverseSpeed="20" id="idHandlingPower"/>
+    <WheelSpin grip1="0.75" grip2="10" gripRecoverSpeed="2" accelMultiplier1="1.7" accelMultiplier2="0.5"/>
+    <HandBrake decceleration="20" deccelerationPowerLock="6" lockBack="1" lockFront="0" frontFrictionScale="3.2" backFrictionScale="0.1" angCorrectionScale="6" id="idHandBrake"/>
+    <SpeedReduction reductionAmount="0.2" reductionRate="0.2"/>
+    <Friction back="5" front="10" offset="-1.3"/>
+    <Correction lateralSpring="2" angSpring="2"/>
+    <Compression frictionBoost="1.5" frictionBoostHandBrake="1.5"/>
+    <Inertia radius="20"/>
+   </Handling>
+   <FakeGears minChangeUpTime="0.69999999" minChangeDownTime="0.5">
+    <Ratios>
+     <Ratio value="0.5"/>
+     <Ratio value="0.80000001"/>
+     <Ratio value="0.94999999"/>
+    </Ratios>
+   </FakeGears>
+   <WheeledLegacy damping="0.11" engineIdleRPM="1000" engineMaxRPM="5000" engineMinRPM="1000" stabilizer="0" maxTimeStep="0.050000001" minEnergy="0.1" suspDampingMin="0" suspDampingMax="0" suspDampingMaxSpeed="3"/>
+   <Boost endurance="8" regeneration="8" strength="10" id="idBoost"/>
+   <SoundParams
+     eventGroup="8_vintage_muscle"
+     engineSoundPosition="enginePos"
+     runSoundDelay="2"
+     startSoundDelay="1.5"
+     roadBumpMinSusp="10"
+     roadBumpMinSpeed="6"
+     roadBumpIntensity="0.30000001"
+     maxSlipSpeed="11"
+     maxSlipWheelSpeed="23"
+     slipMinRatio="0.25"
+     slipMinTime="2"
+     slipWheelMinRatio="0.2"
+     slipWheelMinTime=".1"
+     idleRpmRatio="0.0"
+     overRevRatio="0.0"
+	 soundSpeedSmoothUp="0.11"
+	 soundSpeedSmoothDown="1.5"
+	 soundPowerSmooth="2"
+	 precacheAudioFile="veh_8_vintage"
+    />
+  </ArcadeWheeled>
+ </MovementParams>
+ <Animations>
+  <Animation name="door_left_open" part="body">
+   <States>
+    <State name="default" animation="variant_door_left_open" sound="sounds/vehicles:8_vintage_muscle:door_open" soundHelper="driverEnterPos" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_left_open_loop" part="body">
+   <States>
+    <State name="default" animation="variant_door_left_open_loop" sound="sounds/vehicles:8_vintage_muscle:door_open" soundHelper="driverEnterPos" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_left_close" part="body">
+   <States>
+    <State name="default" animation="variant_door_left_close" sound="sounds/vehicles:8_vintage_muscle:door_close" soundHelper="driverEnterPos" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_left_struggle" part="body">
+   <States>
+    <State name="default" animation="variant_door_left_struggle" sound="sounds/vehicles:8_vintage_muscle:door_close" soundHelper="driverEnterPos" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_right_struggle" part="body">
+   <States>
+    <State name="default" animation="variant_door_right_struggle" sound="sounds/vehicles:8_vintage_muscle:door_close" soundHelper="passengerEnterPosRF" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_right_smash" part="body">
+   <States>
+    <State name="default" animation="variant_door_right_smash" sound="sounds/vehicles:8_vintage_muscle:door_close" soundHelper="passengerEnterPosRF" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_right_open" part="body">
+   <States>
+    <State name="default" animation="variant_door_right_open" sound="sounds/vehicles:8_vintage_muscle:door_open" soundHelper="passengerEnterPosRF" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+  <Animation name="door_right_close" part="body">
+   <States>
+    <State name="default" animation="variant_door_right_close" sound="sounds/vehicles:8_vintage_muscle:door_close" soundHelper="passengerEnterPosRF" isLooped="0" speedDefault="1" speedMin="1" speedMax="1" id="idDoorAnim"/>
+   </States>
+  </Animation>
+ </Animations>
+ <WheelMaster>
+  <SubPartWheel axle="1" density="100" damping="-0.69999999" driving="1" lenMax="0.30000001" maxFriction="1" minFriction="1" stiffness="0" suspLength="0.25"/>
+ </WheelMaster>
+ <Particles mfxRow="vfx_HMMWV">
+  <Exhaust insideWater="0" outsideWater="1">
+   <Helpers>
+    <Helper value="exhaustPos"/>
+    <Helper value="exhaustPos02"/>
+   </Helpers>
+   <EngineStart effect="Class3Vehicles.exhaust.clean_start"/>
+   <EngineStop effect="Class3Vehicles.exhaust.clean_start"/>
+   <EngineRunning effect="Class3Vehicles.exhaust.fortitude_flames" boostEffect="" minPower="0.5" minPowerSizeScale="0.65" minPowerCountScale="0.5" maxPower="1" maxPowerSizeScale="1" maxPowerCountScale="1"/>
+</Exhaust>
+  
+  <DamageEffects>
+   <DamageEffect name="Smoke" helper="burningPos" effect="Class3Vehicles.Engine1"/>
+   <DamageEffect name="Engine1" helper="burningPos" effect="Class3Vehicles.Engine1"/>
+   <DamageEffect name="Engine2" helper="burningPos" effect="Class3Vehicles.Engine_Smoke.muscle_car_old"/>
+   <DamageEffect name="Engine3" helper="burningPos" effect="Class3Vehicles.Engine3"/>
+  </DamageEffects>
+  <EnvironmentLayers>
+   <EnvironmentLayer minSpeed="10" minSpeedSizeScale="0.25" minSpeedCountScale="0.25" minSpeedSpeedScale="0.5" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="2" maxSpeedSpeedScale="1">
+    <Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+    <Emitters />
+    <Wheels all="1" allActive="1"/>
+   </EnvironmentLayer>
+   <EnvironmentLayer name="slip" minSpeed="0.5" minSpeedSizeScale="1" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="25" maxSpeedSizeScale="1" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+    <Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+    <Emitters />
+    <Wheels all="1" allActive="0"/>
+   </EnvironmentLayer>
+   <EnvironmentLayer name="rims" minSpeed="3" minSpeedSizeScale="0.25" minSpeedCountScale="1" minSpeedSpeedScale="1" maxSpeed="10" maxSpeedSizeScale="0.5" maxSpeedCountScale="1" maxSpeedSpeedScale="1">
+    <Alignment alignGroundHeight="0" maxHeightSizeScale="1" maxHeightCountScale="1" alignToWater="0"/>
+    <Emitters />
+    <Wheels all="1" allActive="0"/>
+   </EnvironmentLayer>
+  </EnvironmentLayers>
+ </Particles>
+</Vehicle>

@@ -1,0 +1,35 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="m_glass" MtlFlags="526464" Shader="Glass" GenMask="10010" StringGenMask="%BILINEAR_FP16%ENVIRONMENT_MAP" SurfaceType="glass_vehicle" MatTemplate="" Diffuse="0.25084025,0.25084025,0.25084025" Specular="0.035614368,0.067724593,0.091518357" Emissive="0,0,0" Shininess="120" Opacity="0.44999999">
+   <Textures>
+    <Texture Map="Diffuse" File="Textures/Spencer&apos;s_Mill/House_Glass/Glass_Diffuse.tif"/>
+    <Texture Map="Specular" File="textures/common/grungemap01.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/class3/tod/1800_cm.tif"/>
+   </Textures>
+   <PublicParams FilterColor="0.015175239,0.017936435,0.022012996" FresnelPower="5" TintAmount="1" RefrDepthScale="0" FresnelScale="1" RefrBumpScale="0" FresnelBias="0.056000002" BackLightScale="0.5" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="m_collision" MtlFlags="525472" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="metal_vehicle" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="m_hatchback" MtlFlags="524418" Shader="UL_Test_Vehicle" GenMask="0" StringGenMask="" SurfaceType="metal_vehicle" MatTemplate="" Diffuse="0.27583286,0.33445784,0.288816" Specular="0.076517873,0.073191442,0.086983293" Emissive="0.011126082,0.0050282036,0.0036972396" Shininess="121" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/hatchback_modern/hatchback_modern.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/hatchback_modern/hatchback_modern_normal.tif"/>
+    <Texture Map="Custom" File="objects/vehicles/hatchback_modern/hatchback_vshade.tif"/>
+    <Texture Map="[1] Custom" File="objects/vehicles/hatchback_modern/hatchback_modern_normal_damage.tif"/>
+   </Textures>
+   <PublicParams Saturation3="1" FresnelBias3="0.50599998" FresnelScale0="2.25" Contrast1="0" Hue0="3.0139999" SpecColor2="0.035614371,0.030256521,0.049433462" Glossiness1="32.299999" VertColorMaskY="0" FresnelPower0="3.474" GrimeBlendEnd="0.70700002" BloodBlendEnd="0" Brightness1="0.66299999" FresnelPower1="3" VertColorMaskX="0" Brightness0="0.361" SpecColor3="0.044552632,0.046148844,0.030256521" Hue1="0" Contrast0="0" FresnelScale1="3" FresnelBias2="0.191" Saturation2="1" Hue3="0" SpecColor1="0.086901255,0.12198571,0.16364066" FresnelBias0="0.131" Saturation0="5" Contrast2="0" FresnelScale3="0.44999999" Brightness2="0.39199999" VertColorMaskZ="0" FresnelPower3="4.3779998" DecalMaskIdChoice="2" Glossiness2="26.6" Glossiness3="239.10001" Brightness3="0.23" VertColorMaskW="0" FresnelPower2="1" FresnelScale2="1" Contrast3="0" Saturation1="1" FresnelBias1="0.068000004" Hue2="0.17399999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="m_hatchback_wheel01" MtlFlags="524416" Shader="Illum" GenMask="40000" StringGenMask="%GLOSS_DIFFUSEALPHA" SurfaceType="metal_vehicle" MatTemplate="" Diffuse="0.027755281,0.032875918,0.032875918" Specular="0.2801244,0.32972908,0.29321617" Emissive="0,0,0" Shininess="138" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/hatchback_modern/tire_01.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="2.9820001" FresnelScale="1" FresnelBias="0.0099999998" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lambert1" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

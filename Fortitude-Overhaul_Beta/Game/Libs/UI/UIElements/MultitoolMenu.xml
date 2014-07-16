@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- In-game Debug Multitool -->
+<!-- Category name, of your own choosing -->
+<UIElements name="HUD1">
+ 
+  <!-- Object name, again, of your own choosing -->
+  <UIElement name="In-game Debug Multitool" render_lockless="1" mouseevents="1" keyevents="1">
+     
+   <!-- Point it to the correct files and give it some default settings -->
+    <GFx file="multitool_ui.gfx" layer="0" >
+      <Constraints>
+		<Align mode="dynamic" halign="left" valign="top" scale="1" max="1" />
+	 
+		</Constraints>
+    </GFx>
+	<Events>
+		<Event name="triggerChoices" fscommand="triggerChoices" desc="Triggers the setting/engaging of button/checkbox clicked, passes to appropriate port" >
+			<param name="varID" type="int" />
+		</Event>
+		<Event name="setvehicle" fscommand="setvehicle" desc="Triggers the spawning of the vehicle chosen in the setVehicle event." >
+			<param name="chosenVehicle" type="string" />
+		</Event>
+		<!--<Event name="beammeup_tele_loc" fscommand="beammeup_tele_loc" desc="Feeds and Triggers Position to Teleport to" >
+			<param name="locationChoice" type="string" />
+		</Event>
+		<Event name="beammeup_tele_rot" fscommand="beammeup_tele_rot" desc="Feeds Rotation of Character at chosen Position" >
+			<param name="rotationChoice" type="string" />
+		</Event>-->
+		<Event name="setBeamMeUpLoc1" funcname="setBeamMeUpLoc1" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc2" funcname="setBeamMeUpLoc2" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc3" funcname="setBeamMeUpLoc3" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc4" funcname="setBeamMeUpLoc4" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc5" funcname="setBeamMeUpLoc5" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc6" funcname="setBeamMeUpLoc6" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc7" funcname="setBeamMeUpLoc7" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc8" funcname="setBeamMeUpLoc8" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc9" funcname="setBeamMeUpLoc9" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="setBeamMeUpLoc10" funcname="setBeamMeUpLoc10" desc="Does it!" ><param name="chosenLocation" type="string" desc="" /></Event>
+		<Event name="beammeup_car" fscommand="beammeup_car" desc="Sends call to engine just like pressing 6. Triggers teleport to last vehicle. Lamentably, no peanuts on the flight." >
+			<param name="teleportToCar" type="bool" />
+		</Event>
+		<Event name="readythebeamscotty_self1" fscommand="readythebeamscotty_self1" desc="Sends call to grasp your chosen coordinates tightly in its pocket for lunch." >
+			<param name="personalTeleporterSave1" type="bool" />
+		</Event>
+		<Event name="beammeup_self1" fscommand="beammeup_self1" desc="Scotty turns you into pure light and returns you to the ship, he keeps your pocket change as a tip." >
+			<param name="personalTeleporterGo1" type="bool" />
+		</Event>
+		<Event name="readythebeamscotty_self2" fscommand="readythebeamscotty_self2" desc="Sends call to grasp your chosen coordinates tightly in its pocket for lunch." >
+			<param name="personalTeleporterSave2" type="bool" />
+		</Event>
+		<Event name="beammeup_self2" fscommand="beammeup_self2" desc="Scotty turns you into pure light and returns you to the ship, he keeps your pocket change as a tip." >
+			<param name="personalTeleporterGo2" type="bool" />
+		</Event>
+		<Event name="f_lock_saveposition1" fscommand="f_lock_saveposition1" desc="At control panel 1, Scotty holds a lightswitch rave and locks it up, unable to save new coordinates til it's unclocked, captain!" >
+			<param name="lock_savePosition1" type="bool" />
+		</Event>
+		<Event name="f_lock_saveposition2" fscommand="f_lock_saveposition2" desc="At control panel 2, Scotty holds a lightswitch rave and locks it up, unable to save new coordinates til it's unclocked, captain!" >
+			<param name="lock_savePosition2" type="bool" />
+		</Event>
+	</Events>
+	<Functions>
+	<!-- Map these out as functions/variables from the UI, e.g. click to toggle godmode button, output the boolean for godmode, true/false -->
+		<Function name="setChoices" funcname="setChoices" desc="Grabs button/checkbox input and sets the choice for which setting you want to enable/disable" >
+			<param name="varID" type="int" desc="Grabs button/checkbox input and sets the choice for which setting you want to enable/disable" />
+		</Function>
+		<Function name="spawnVehicle" funcname="spawnVehicle" desc="Var passed from GUI, grabs button input and selects the vehicle corresponding to button." >
+			<param name="vehicleChoice" type="string" desc="Var passed from GUI, grabs button input and selects the vehicle corresponding to button." />
+		</Function>
+		<!--<Function name="setBeamMeUpLoc" funcname="setBeamMeUpLoc" desc="Does it!" ><param name="locationChoice" type="string" desc="" /></Function>
+		<Function name="setBeamMeUpRot" funcname="setBeamMeUpRot" desc="Does it!" >
+			<param name="rotationChoice" type="string" desc="" />
+		</Function>-->
+</Functions>
+
+  </UIElement>
+</UIElements>

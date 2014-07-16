@@ -1,0 +1,45 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="m_PickupNew_wheel01" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/pickupnew/tire_01.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="m_glass" MtlFlags="526464" Shader="Glass" GenMask="100000090010" StringGenMask="%BILINEAR_FP16%ENVIRONMENT_MAP%GLOSS_MAP%TINT_MAP" SurfaceType="glass_vehicle" MatTemplate="" Diffuse="0.1036341,0.065753885,0.022012994" Specular="0.12752977,0.044552624,0.0033027029" Emissive="0.20835964,0.20835964,0.034230206" Shininess="16" Opacity="0.46000001">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/glass/commercial_window_01.tif"/>
+    <Texture Map="Specular" File="textures/detail/scratches_256.tif"/>
+    <Texture Map="Bumpmap" File="textures/common/window_wavey_normal.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/class3/03/03_generic_outdoor_cm.tif"/>
+   </Textures>
+   <PublicParams BumpMapTile="1" TintColor="1,1,1" FresnelPower="5" FresnelScale="1" FresnelBias="0.056000002" CloudinessReducesGloss="0.5" TintCloudiness="0" BackLightScale="0.5" BumpScale="0.1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="m_PickupNew" MtlFlags="524420" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.035614368,0.035614368,0.035614368" Specular="0,0,0" Emissive="0,0,0" Shininess="18" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/pickupnew/pickupnew.tif" IsTileU="0" IsTileV="0"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/pickupnew/pickupnew_normal.tif"/>
+    <Texture Map="[1] Custom" File="objects/vehicles/pickupnew/pickupnew_normal_wrecked.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="5" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.24680044,0.24680044,0.24680044"/>
+  </Material>
+  <Material Name="m_nodraw" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_invulnerable" MatTemplate="" Diffuse="0.21576442,0.21576442,0.21576442" Specular="0.5,0.5,0.5" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_plate_a_spec.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="m_fortitude" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="metal_vehicle" MatTemplate="" Diffuse="0.056374099,0.032875914,0.01266372" Specular="0,0,0" Emissive="1,1,1" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_plate_a_spec.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="piping" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.47044027,0.47044027,0.47044027" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metaltarnished02.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

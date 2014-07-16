@@ -1,0 +1,42 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Main" MtlFlags="524418" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_chrome_dirty_01.dds"/>
+    <Texture Map="Specular" File="textures/metal/metal_plate_a_diff.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Grating" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1" AlphaTest="0.37">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_floor_02.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Chain_Link" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1" AlphaTest="0.1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/architecture/fences/chain_link_01/fencechainlinklinks.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Semi_Shiny_Metal" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.14799802,0.12752977,0.11392093" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metaltarnished01.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Concrete" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.026548682,0.026548682,0.026548682" Specular="0.011881335,0.0096963281,0.0090214908" Emissive="0.0083731171,0.0065849568,0.0045597549" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/concrete/ground/concrete_ground_b_diff.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Darker_Metal" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.047775757,0.047775757,0.047775757" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metaltarnished01.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

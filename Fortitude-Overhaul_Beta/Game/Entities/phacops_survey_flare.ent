@@ -1,0 +1,5 @@
+<Entity
+ Name="Phacops_Survey_Flare"
+ Script="Scripts/Entities/Items/phacops_survey_flare.lua"
+/>
+

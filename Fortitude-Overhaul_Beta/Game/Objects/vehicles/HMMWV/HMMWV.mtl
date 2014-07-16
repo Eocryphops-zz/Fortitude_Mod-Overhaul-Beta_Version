@@ -1,0 +1,66 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="hull" MtlFlags="524416" Shader="Illum" GenMask="80001" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.39929333,0.39929333,0.39929333" Specular="0.34402567,0.34402567,0.34402567" Emissive="0,0,0" Shininess="0.5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/hmmwv/hmmwv_hull.dds"/>
+    <Texture Map="Specular" File="objects/vehicles/hmmwv/hmmwv_hull_spec.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Interior" MtlFlags="524416" Shader="Illum" GenMask="80001" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.39929333,0.39929333,0.39929333" Specular="0.34402567,0.34402567,0.34402567" Emissive="0,0,0" Shininess="0.5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/HMMWV/HMMWV_interior.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/HMMWV/HMMWV_interior_spec.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="window" MtlFlags="524448" Shader="Illum" GenMask="90001" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.56680977,0.61868572,0.68703085" Specular="0.57954663,0.68703085,0.73720479" Emissive="0,0,0" Shininess="0.30000001" Opacity="0.303">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/HMMWV/HMMWV_window.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/HMMWV/HMMWV_window_spec.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="1">
+     <PublicParams VariationTilling="1" TillingV="1" TintColor="1,1,1" ReflectionAmount="0.23999999" TillingU="1" TopSnowAmount="1" IndirectColor="0.25,0.25,0.25"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="wheels" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.39929333,0.39929333,0.39929333" Specular="0.34402567,0.34402567,0.34402567" Emissive="0,0,0" Shininess="0.5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/HMMWV/HMMWV_wheel.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/HMMWV/HMMWV_wheel_spec.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" FresnelScale="1" SpecularMultiplier="1.025" FresnelBias="0" Glossiness="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="decals" MtlFlags="524416" Shader="Illum" GenMask="801" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/HMMWV/HMMWV_decals.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="damaged" MtlFlags="524416" Shader="Illum" GenMask="82001" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.15105805,0.15105805,0.15105805" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/HMMWV/damage.dds">
+     <TexMod TileU="10" TileV="10"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/vehicles/HMMWV/damage_spec.dds">
+     <TexMod TileU="10" TileV="10"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="5" DetailBlendAmount="0" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" DetailBumpScale="1" DetailBumpTillingV="5" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="broken_windowpanes" MtlFlags="524448" Shader="Illum" GenMask="1" StringGenMask="" SurfaceType="metal_vehicle_heavy" MatTemplate="" Diffuse="0.46474114,0.46474114,0.46474114" Specular="0.084641509,0.11926401,0.11926401" Emissive="0,0,0" Shininess="3" Opacity="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/HMMWV/broken_windowpanes.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

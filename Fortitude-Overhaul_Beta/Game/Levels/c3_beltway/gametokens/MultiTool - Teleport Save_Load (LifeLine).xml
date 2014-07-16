@@ -1,0 +1,6 @@
+<GameTokensLibrary Name="MultiTool_Tele_SaveLoad">
+ <GameToken Name="Vector_Save1" Type="Vec3" Value="1632.96,1350.34,53.775" Description="First Saved Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Save2" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Second Saved Teleport Position" LocalOnly="1"/>
+ <GameToken Name="isLocked_Save1" Type="Int" Value="0" Description="Checks to see if Save 1 Has been locked by the user" LocalOnly="1"/>
+ <GameToken Name="isLocked_Save2" Type="Int" Value="0" Description="Checks to see if Save 2 Has been locked by the user" LocalOnly="1"/>
+</GameTokensLibrary>

@@ -1,0 +1,37 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Main" MtlFlags="524416" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.1869885,0.13035227,0.11129942" Specular="0.091518357,0.091518357,0.091518357" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="../../../../../Program Files (x86)/Steam/SteamApps/common/CryEngine/Game/textures/metal/rust_01_diffuse.dds"/>
+    <Texture Map="Specular" File="textures/metal/metal_stribes_a_diff.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0,0,0"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="524448" Shader="Illum" GenMask="100000000" StringGenMask="%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures />
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Concrete" MtlFlags="524416" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="concrete" MatTemplate="" Diffuse="0.073827766,0.073827766,0.073827766" Specular="0.039452333,0.040634759,0.038288925" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/concrete/generic/concrete_weathered_generic.dds"/>
+    <Texture Map="Specular" File="textures/concrete/eroded_concrete.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Shiny_Metal" MtlFlags="524416" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.17677432,0.14497213,0.13609855" Specular="1.2726351,1.2726351,1.2726351" Emissive="0.032875914,0.0055217445,0.0045597549" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metaltarnished02.dds"/>
+    <Texture Map="Specular" File="textures/metal/rusty_pipe_specular.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="0" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Stripped_Metal" MtlFlags="524416" Shader="Illum" GenMask="100080000" StringGenMask="%GLOSS_MAP%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.042987008,0.042987008,0.042987008" Specular="4,4,4" Emissive="0.30212551,0.30212551,0.30212551" Shininess="84" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metalplaterivetsdiffuse.dds"/>
+    <Texture Map="Specular" File="textures/metal/metaltarnished01.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="1" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="0.81099999" IndirectColor="0,0,0"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

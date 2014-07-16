@@ -1,0 +1,23 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="wheels" MtlFlags="524416" Shader="Illum" GenMask="100000000" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.035614368,0.017936433,0.020951131" Specular="0,0,0" Emissive="0.054592282,0.051122054,0.084641509" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/hatchback_modern/tire_01.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="body" MtlFlags="524416" Shader="Illum" GenMask="100000000" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.25491586,0.12198571,0.086901255" Specular="0,0,0" Emissive="0.073827766,0.096266121,0.13609855" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_stribes_a_spec.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hullproxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,4 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100000000" StringGenMask="%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.00010718736,0.77422732,0.54799354" Specular="4,4,4" Emissive="1,1,1" Shininess="58" Opacity="1" GlowAmount="100">
+ <Textures />
+ <PublicParams FresnelPower="0" GlossFromDiffuseContrast="1" FresnelScale="32" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="1,1,1"/>
+</Material>

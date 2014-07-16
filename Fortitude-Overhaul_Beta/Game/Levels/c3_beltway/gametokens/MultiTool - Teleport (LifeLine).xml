@@ -1,0 +1,22 @@
+<GameTokensLibrary Name="MultiTool_Tele">
+ <GameToken Name="Vector_Ranger" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Ranger Station (Ranger) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Church" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Church (Church) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_BigJohn" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Little Red House down the hill from Church (BigJohn) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Rodeo" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Rodeo/Fairgrounds (Rodeo) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Alamo" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Alamo (Alamo) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Riverside" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Savini Residence (Riverside) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Warehouse" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Snyder Trucking Warehouse(Warehouse) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_DanielFarm" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Farmhouse (DanielFarm) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Military" Type="Vec3" Value="1632.96,1350.34,53.775" Description="LifeLine DLC Military Outpost (Military) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Outlands" Type="Vec3" Value="1632.96,1350.34,53.775" Description="Outlands Base - Welcome to the Wasteland (OutlandsBase) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_RangerRot" Type="Vec3" Value="0,0,0" Description="Ranger Station (Ranger) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_ChurchRot" Type="Vec3" Value="0,0,0" Description="Church (Church) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_BigJohnRot" Type="Vec3" Value="0,0,0" Description="Little Red House down the hill from Church (BigJohn) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_RodeoRot" Type="Vec3" Value="0,0,0" Description="Rodeo/Fairgrounds (Rodeo) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_AlamoRot" Type="Vec3" Value="0,0,0" Description="Alamo (Alamo) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_RiversideRot" Type="Vec3" Value="0,0,0" Description="Savini Residence (Riverside) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_WarehouseRot" Type="Vec3" Value="0,0,0" Description="Snyder Trucking Warehouse(Warehouse) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_DanielFarmRot" Type="Vec3" Value="0,0,0" Description="Farmhouse (DanielFarm) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_MilitaryRot" Type="Vec3" Value="0,0,0" Description="LifeLine DLC Military Outpost (Military) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_OutlandsRot" Type="Vec3" Value="0,0,0" Description="Outlands Base - Welcome to the Wasteland (OutlandsBase) Teleport Rotation" LocalOnly="1"/>
+</GameTokensLibrary>

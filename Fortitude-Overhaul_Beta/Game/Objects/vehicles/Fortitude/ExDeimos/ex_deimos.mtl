@@ -1,0 +1,50 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="body" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.67304909,0.67304909,0.67304909" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/fortitude/exdeimos/delivery_flatbed.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="semi" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_grate_spec.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="glass" MtlFlags="524416" Shader="Illum" GenMask="100080000" StringGenMask="%GLOSS_MAP%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.13035227,0.047775757,0.038472746" Specular="2.2603784,0.092603996,0.092603996" Emissive="0.96581465,0,0" Opacity="0.99000001" GlowAmount="30">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/glass/wiied_glass_difalpha.dds"/>
+    <Texture Map="Specular" File="textures/detail/scratches_256.dds"/>
+    <Texture Map="Bumpmap" File="textures/detail/scratches_256_nrm_00000001.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="3.599" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="chrome" MtlFlags="524416" Shader="Illum" GenMask="100080000" StringGenMask="%GLOSS_MAP%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.238828,0.238828,0.238828" Specular="1,1,1" Emissive="1,1,1" Shininess="59" Opacity="1" GlowAmount="5">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metalduct01.dds"/>
+    <Texture Map="Specular" File="textures/detail/scratches_512.dds"/>
+    <Texture Map="Bumpmap" File="textures/metal/ceiling_metal01_ddn.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="0.398" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="0.41600001" IndirectColor="0.33922336,0.19397216,0.17013837"/>
+  </Material>
+  <Material Name="paint" MtlFlags="524416" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="255" Opacity="1" GlowAmount="2">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/fortitude/exdeimos/sugarskull_in_green.dds"/>
+    <Texture Map="Specular" File="textures/metal/metal_door_b_spec.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="sodlogo" MtlFlags="524416" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Emissive="0.96581465,0.96581465,0.96581465" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/fortitude/exdeimos/sod-logo.dds"/>
+    <Texture Map="Specular" File="textures/metal/metalplaterivetsnormal.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

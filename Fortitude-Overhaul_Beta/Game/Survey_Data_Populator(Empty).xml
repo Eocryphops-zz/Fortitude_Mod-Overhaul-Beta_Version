@@ -1,0 +1,7 @@
+<PrefabsLibrary Name="Survey_Data_Populator">
+ <Prefab Name="Survey_Data_Population.Object_Space" Id="{C5CB39D3-2EFD-4396-83C2-56194EC037E8}" Library="Survey_Data_Populator">
+  <Objects>
+   <!-- Copy and Paste all your data in here -->
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

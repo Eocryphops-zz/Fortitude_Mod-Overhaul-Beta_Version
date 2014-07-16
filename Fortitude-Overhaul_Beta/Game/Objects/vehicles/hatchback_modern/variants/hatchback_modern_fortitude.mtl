@@ -1,0 +1,34 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="placeholder_glass" Shader="NoDraw" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="proxymesh" MtlFlags="128" Shader="NoDraw" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="placeholder_body" MtlFlags="128" Shader="NoDraw" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="wheel" MtlFlags="128" SurfaceType="" Shader="NoDraw" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="cow" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.22713655,0.14799802,0.080219261" Specular="0,0,0" Emissive="0,0,0" Opacity="1" GlowAmount="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/hatchback_modern/variants/cow_print.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="piping" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.47044027,0.47044027,0.47044027" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metaltarnished02.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="m_fortitude" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="metal_vehicle" MatTemplate="" Diffuse="0.10114516,0.086901255,0.060031611" Specular="0,0,0" Emissive="1,1,1" Shininess="35" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_stribes_a_spec.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>
