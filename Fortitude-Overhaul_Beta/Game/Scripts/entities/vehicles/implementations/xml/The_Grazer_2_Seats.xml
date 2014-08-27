@@ -1,7 +1,7 @@
 <!-- Vehicle XML definition file -->
-<!-- Fortitude Mod - Armored Cow Car - 2-Seater "The_Grazer" -->
+<!-- Fortitude Mod - Armored Cow Car - 5-Seater "The_Grazer" -->
 
-<Vehicle name="The_Grazer_2_Seats" actionMap="landvehicle" type="2">
+<Vehicle name="The_Grazer_5_Seats" actionMap="landvehicle" type="2">
  <Physics pushable="0" retainGravity="1">
   <Buoyancy waterDensity="50" waterResistance="0"/>
   <Simulation maxTimeStep="0.02" minEnergy="0.0020000001" maxLoggedCollisions="2"/>
@@ -365,9 +365,7 @@
   <Component name="EnterRightFront" damageMax="0" position="1.25,0.0,1.15" size="0.35,1.25,1.35" useBoundsFromParts="0">
    <DamageBehaviors/>
   </Component>
-  <Component name="InventoryTrunk" damageMax="0" position="0,-3.5,1.15" size="3.15,1.6,2.0" useBoundsFromParts="0">
-   <DamageBehaviors/>
-  </Component>
+
    <!-- Passenger entry bounds are zero to disallow use by the player-->
    <Component name="EnterPassenger" damageMax="0" position="0,0,0" size="0,0,0.1" useBoundsFromParts="0">
      <DamageBehaviors/>
@@ -406,7 +404,7 @@
 				
 				<!--Fortitude-->
 				<Part name="fortitude_armor" class="Static" component="" helper="" mass="250" position="0,0,0" disablePhysics="1" disableCollision="0" isHidden="0">
-					<Static filename="objects/vehicles/musclecar_variant/variants/musclecar_fortitude-coupe.cgf" />
+					<Static filename="objects/vehicles/musclecar_variant/variants/musclecar_fortitude.cgf" />
 				</Part>
 				<!--Fortitude-->
 				
@@ -460,7 +458,7 @@
                 </Part>
             </Parts>
 
-            <Animated filename="objects/vehicles/MuscleCar_Variant/MuscleCar_Variant.cga" filenameDestroyed="objects/vehicles/musclecar_destroyed/musclecar_destroyed.cga" id="idAnimatedPart"/>
+            <Animated filename="objects/vehicles/MuscleCar_Variant/MuscleCar_Variant.cga" filenameDestroyed="objects/vehicles/musclecar_variant_destroyed/musclecar_variant_destroyed.cga" id="idAnimatedPart"/>
         </Part>
 
         <Part name="massBox" class="MassBox" mass="1000" position="0,-0.15,0.65" disablePhysics="0" disableCollision="0" isHidden="0">
@@ -626,13 +624,12 @@
    <Enter>
     <Seats>
      <Seat value="passenger"/>
+	 <!-- Seat for person under the rollbar-->
+	 <Seat value="passengerLR"/>
+	 <!--Seat for Gunner's Nest -->
+	 <Seat value="passengerRR"/>
     </Seats>
    </Enter>
-  </Action>
-  <Action class="Inventory">
-   <Activations>
-    <Activation type="OnUsed" param1="component" param2="InventoryTrunk"/>
-   </Activations>
   </Action>
  </Actions>
  <Seats>
@@ -758,6 +755,73 @@
    </Views>
    <SeatActions/>
   </Seat>
+  
+  <!-- Fortitude Galleon Seating (Counter-clockwise Seat Population) -->
+  
+  <!-- Rear Gunner's Nest -->
+  <Seat
+    name="passengerRR"
+    part=""
+    enterHelper="passengerEnterPosRR"
+    sitHelper="passengerSitPosRR"
+    exitHelper="passengerExitPosRR"
+    isDriver="0"
+    AimPart=""
+    disableStopAllAnimationsOnEnter="1"
+    seatGroupIndex="3"
+    locked="Players"
+    agSeatNumber="2"
+  >
+   <Views>
+    <View class="FirstPerson">
+     <SteerThirdPerson/>
+     <FirstPerson/>
+    </View>
+    <View class="ThirdPerson" rotationMin="0,0,0" rotationMax="0,0,0" rotationInit="0,0,0">
+     <ThirdPerson distance="8" heightOffset="1.5" speed="5"/>
+    </View>
+    <View class="ThirdPerson" rotationMin="0,0,90" rotationMax="0,0,90" rotationInit="0,0,90">
+     <ThirdPerson distance="8" heightOffset="1.5" speed="5"/>
+    </View>
+    <View class="ThirdPerson" rotationMin="0,0,180" rotationMax="0,0,180" rotationInit="0,0,180">
+     <ThirdPerson distance="8" heightOffset="1.5" speed="5"/>
+    </View>
+   </Views>
+   <SeatActions/>
+  </Seat>
+  
+  <!-- Under rollbar -->
+  <Seat
+    name="passengerLR"
+    part=""
+    enterHelper="passengerEnterPosLR"
+    sitHelper="passengerSitPosLR"
+    exitHelper="passengerExitPosLR"
+    isDriver="0"
+    AimPart=""
+    disableStopAllAnimationsOnEnter="1"
+    seatGroupIndex="4"
+    locked="Players"
+    agSeatNumber="3"
+  >
+   <Views>
+    <View class="FirstPerson">
+     <SteerThirdPerson/>
+     <FirstPerson/>
+    </View>
+    <View class="ThirdPerson" rotationMin="0,0,0" rotationMax="0,0,0" rotationInit="0,0,0">
+     <ThirdPerson distance="8" heightOffset="1.5" speed="5"/>
+    </View>
+    <View class="ThirdPerson" rotationMin="0,0,90" rotationMax="0,0,90" rotationInit="0,0,90">
+     <ThirdPerson distance="8" heightOffset="1.5" speed="5"/>
+    </View>
+    <View class="ThirdPerson" rotationMin="0,0,180" rotationMax="0,0,180" rotationInit="0,0,180">
+     <ThirdPerson distance="8" heightOffset="1.5" speed="5"/>
+    </View>
+   </Views>
+   <SeatActions/>
+  </Seat>
+  <!-- End Fortitude -->
  </Seats>
  <SeatGroups>
   <SeatGroup name="Cabin">

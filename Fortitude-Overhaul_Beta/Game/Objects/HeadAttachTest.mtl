@@ -1,0 +1,21 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Main" MtlFlags="524416" Shader="Illum" GenMask="80000" StringGenMask="%GLOSS_MAP" SurfaceType="" MatTemplate="" Diffuse="0.098689198,0.098689198,0.098689198" Specular="0.066260934,0.066260934,0.066260934" Emissive="0.11657578,0.031551391,0.0077510267" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/green_scratched_stained_diffuse.dds"/>
+    <Texture Map="Specular" File="textures/metal/metal_grate_diff.dds"/>
+    <Texture Map="Bumpmap" File="textures/spencer&apos;s_mill/house_walls/wall_charmcote_wallpaper_diffuse.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="0" GlossMapChannelB="1" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Fabric" MtlFlags="524416" Shader="Illum" GenMask="80000" StringGenMask="%GLOSS_MAP" SurfaceType="" MatTemplate="" Diffuse="0.010397803,0.011126082,0.0029323183" Specular="0.076945491,0.076945491,0.076945491" Emissive="0.12198571,0.030256517,0.028991185" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/spencer&apos;s_mill/house_walls/wall_charmcote_wallpaper_diffuse.dds"/>
+    <Texture Map="Specular" File="textures/spencer&apos;s_mill/house_walls/wall_summerdale_wallpaper.dds"/>
+    <Texture Map="Bumpmap" File="textures/spencer&apos;s_mill/house_walls/wall_plaster_dirty.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="0" GlossFromDiffuseContrast="-10" FresnelScale="1" GlossFromDiffuseOffset="0.36500001" FresnelBias="1" GlossFromDiffuseAmount="1" GlossFromDiffuseBrightness="10" IndirectColor="0.32972905,0.18354899,0.26317474"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

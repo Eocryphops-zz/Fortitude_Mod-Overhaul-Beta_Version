@@ -25,7 +25,7 @@
    </Textures>
    <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
   </Material>
-  <Material Name="Concrete" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.026548682,0.026548682,0.026548682" Specular="0.011881335,0.0096963281,0.0090214908" Emissive="0.0083731171,0.0065849568,0.0045597549" Opacity="1">
+  <Material Name="Concrete" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.026548682,0.026548682,0.026548682" Specular="0.011881335,0.0096963281,0.0090214908" Emissive="0.0083731171,0.0065849568,0.0045597549" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="textures/concrete/ground/concrete_ground_b_diff.dds"/>
    </Textures>

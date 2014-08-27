@@ -1,0 +1,44 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="m_glass" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/kustomplatform/delivery_flatbed.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="m_collision" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0,0,0" Emissive="0,0,0" Shininess="10">
+   <Textures />
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0,0,0" Emissive="0,0,0" Shininess="10">
+   <Textures />
+  </Material>
+  <Material Name="m_musclecar" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0,0,0" Emissive="0,0,0" Shininess="10">
+   <Textures />
+  </Material>
+  <Material Name="m_fortitude" MtlFlags="524418" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="metal_vehicle" MatTemplate="" Diffuse="0.10114516,0.086901255,0.060031611" Specular="0,0,0" Emissive="1,1,1" Shininess="35" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metal_stribes_a_spec.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="horns" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/wood/furniture_oldoak.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cow" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.22713655,0.14799802,0.080219261" Specular="0,0,0" Emissive="0,0,0" Opacity="1" GlowAmount="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/musclecar_variant/variants/cow_print.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="piping" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.47044027,0.47044027,0.47044027" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/metal/metaltarnished02.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

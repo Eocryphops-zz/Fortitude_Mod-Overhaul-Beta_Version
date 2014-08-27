@@ -1,0 +1,29 @@
+<SmartObjectsLibrary>
+ <SmartObject iTemplateId="0" sName="DisplayUsePrompt" sFolder="/Test" sDescription="" sUserClass="Player" sUserState="-Busy" sUserHelper="" sObjectClass="Usable" sObjectState="-Busy,Dead,Disabled,Searched" sObjectHelper="" iMaxAlertness="2" bEnabled="1" sEvent="" iRuleType="0" sEntranceHelper="" sExitHelper="" fMinDelay="0" fMaxDelay="0.1" fMemory="1" fDistanceFrom="0" fDistanceLimit="2.5" fOrientationLimit="360" bHorizLimitOnly="0" fOrientToTargetLimit="360" fProximityFactor="1" fOrientationFactor="0" fRandomnessFactor="0" fVisibilityFactor="0" fLookAtOnPerc="0" sObjectPreActionState="" sUserPreActionState="" sAction="showuseprompt" eActionType="1" sObjectPostActionState="" sUserPostActionState="" fApproachSpeed="0" iApproachStance="3" sAnimationHelper="" sApproachHelper="" fStartWidth="0" fStartDirectionTolerance="2" fStartArcAngle="0.050000001"/>
+<SmartObject iTemplateId="5" sName="Swing, Fling, and Zing!" sFolder="" sDescription="Damage an enemy being hit by the trap." sUserClass="Zombie" sUserState="" sUserHelper="" sObjectClass="Swingers_and_Flingers" sObjectState="" sObjectHelper="" iMaxAlertness="2" bEnabled="0" sEvent="" iRuleType="0" sEntranceHelper="" sExitHelper="" fMinDelay="0" fMaxDelay="0.2" fMemory="0.5" fDistanceFrom="0" fDistanceLimit="2.8" fOrientationLimit="360" bHorizLimitOnly="0" fOrientToTargetLimit="360" fProximityFactor="1" fOrientationFactor="2" fRandomnessFactor="0" fVisibilityFactor="0" fLookAtOnPerc="0.40000001" sObjectPreActionState="" sUserPreActionState="Busy,Idle" sAction="Trap_FlingSwing" eActionType="2" sObjectPostActionState="" sUserPostActionState="Busy,Idle" fApproachSpeed="0" iApproachStance="3" sAnimationHelper="" sApproachHelper="" fStartWidth="0" fStartDirectionTolerance="0" fStartArcAngle="0"/>
+ <SmartObject iTemplateId="5" sName="Swingers_and_Flingers" sFolder="" sDescription="Damage an enemy being hit by the trap." sUserClass="Zombie" sUserState="" sUserHelper="" sObjectClass="Swingers_and_Flingers" sObjectState="" sObjectHelper="" iMaxAlertness="2" bEnabled="1" sEvent="" iRuleType="0" sEntranceHelper="" sExitHelper="" fMinDelay="0" fMaxDelay="0.1" fMemory="2" fDistanceFrom="0" fDistanceLimit="3" fOrientationLimit="360" bHorizLimitOnly="0" fOrientToTargetLimit="360" fProximityFactor="1" fOrientationFactor="0" fRandomnessFactor="0" fVisibilityFactor="0" fLookAtOnPerc="0.40000001" sObjectPreActionState="" sUserPreActionState="Busy" sAction="Trap_FlingSwing" eActionType="2" sObjectPostActionState="" sUserPostActionState="" fApproachSpeed="0" iApproachStance="3" sAnimationHelper="" sApproachHelper="" fStartWidth="0" fStartDirectionTolerance="0" fStartArcAngle="0"/>
+ <Class name="Actor" description="" location="" template=""/>
+ <Class name="BarricadeNode" description="This is a generic barricade node." location="/UL" template=""/>
+ <Class name="Builder" description="NPC that can build barricades at interaction nodes." location="" template=""/>
+ <Class name="NPC" description="An Undead Labs NPC character." location="/UL" template=""/>
+ <Class name="Player" description="Class used by the local player." location="System" template=""/>
+ <Class name="Usable" description="" location="" template=""/>
+ <Class name="Zombie" description="" location="" template=""/>
+ <State name="AWESOME" description="" location=""/>
+ <State name="Busy" description="" location=""/>
+ <State name="Dead" description="" location="/Generic"/>
+ <State name="Disabled" description="" location="/Generic"/>
+ <State name="Dispersed" description="" location="/Runner"/>
+ <State name="Exploded" description="The smart object has already exploded." location="/Generic"/>
+ <State name="HasAmmo" description="This prop will provide ammo when searched" location="/Prop"/>
+ <State name="HasFood" description="This prop will provide food when searched" location="/Prop"/>
+ <State name="HasMeds" description="This prop will provide meds when searched" location="/Prop"/>
+ <State name="HasMission" description="This prop will launch a mission when searched" location="/Prop"/>
+ <State name="HasStim" description="This prop will provide stim when searched" location="/Prop"/>
+ <State name="Idle" description="This state is used to mark objects as idle." location="/Generic"/>
+ <State name="Searched" description="" location=""/>
+ <State name="Siege_Build" description="" location=""/>
+ <State name="Siege_Destroy" description="" location=""/>
+ <Class name="Swingers_and_Flingers" description="Swing them Zeds, Fling them Zeds, tryin&apos; to get, at our Crumpet breads." location="/Traps" template=""/>
+ <Helper className="Swingers_and_Flingers" name="Fortitude_Traps_Swingers_and_Flingers" pos="0,0,0" rot="1,0,0,0" description="Traps, sticky traps for nasty ol&apos; zeds tryin&apos; to get at our crumpet stash"/>
+</SmartObjectsLibrary>

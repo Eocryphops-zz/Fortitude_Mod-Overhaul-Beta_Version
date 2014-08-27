@@ -1,23 +1,32 @@
 <Material MtlFlags="524544">
  <SubMaterials>
-  <Material Name="main" MtlFlags="524418" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.016988052,0.015175238,0.016988052" Specular="0.0066054058,0.0045259064,0.0039268318" Emissive="0,0,0" Opacity="1">
+  <Material Name="main" MtlFlags="524418" Shader="Illum" GenMask="100080000" StringGenMask="%GLOSS_MAP%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.014310519,0.014310519,0.014310519" Specular="0.056374099,0.047775757,0.030256517" Emissive="0,0,0" Shininess="17" Opacity="1">
    <Textures>
-    <Texture Map="Diffuse" File="/program files (x86)/steam/steamapps/common/cryengine/game/textures/metal/metalplaterivetsdiffuse.dds"/>
-    <Texture Map="Specular" File="/program files (x86)/steam/steamapps/common/cryengine/game/textures/metal/metalplaterivetsnormal.dds"/>
+    <Texture Map="Diffuse" File="textures/concrete/ground/concrete_ground_b_diff.dds"/>
+    <Texture Map="Specular" File="textures/metal/metalplaterivetsdiffuse.dds"/>
    </Textures>
    <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
   </Material>
-  <Material Name="grating" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.29765266,0.29765266,0.29765266" Emissive="0,0,0" Opacity="1" AlphaTest="0.56999999">
+  <Material Name="grating" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.29765266,0.29765266,0.29765266" Specular="0,0,0" Emissive="0,0,0" Opacity="1" AlphaTest="0.56999999">
    <Textures>
     <Texture Map="Diffuse" File="textures/metal/metal_floor_02.dds"/>
    </Textures>
    <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
   </Material>
-  <Material Name="glass" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.091518357,0.078056589,0.073827766" Specular="0.056374099,0.025371276,0.0160677" Emissive="0,0,0" Shininess="17" Opacity="0.34">
+  <Material Name="glass" MtlFlags="540834" Shader="Illum" GenMask="100000000" StringGenMask="%TESSELLATION" SurfaceType="glass" MatTemplate="" Diffuse="0.091518357,0.078056589,0.073827766" Specular="0.056374099,0.025371276,0.0160677" Emissive="0,0,0" Shininess="3" Opacity="0.54000002">
    <Textures>
     <Texture Map="Diffuse" File="textures/glass/commercial_window_01.dds"/>
    </Textures>
    <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+   <MaterialLayers>
+    <Layer Name="Glass" NoDraw="0">
+     <PublicParams BumpMapTile="1" TintColor="1,1,1" FresnelPower="4" FresnelScale="1" FresnelBias="1" TintCloudiness="0" BackLightScale="0.5" BumpScale="0.1" IndirectColor="0.25,0.25,0.25"/>
+    </Layer>
+    <Layer Name="Glass" NoDraw="0">
+     <PublicParams BumpMapTile="1" TintColor="1,1,1" FresnelPower="4" FresnelScale="1" FresnelBias="1" TintCloudiness="0" BackLightScale="0.5" BumpScale="0.1" IndirectColor="0.25,0.25,0.25"/>
+    </Layer>
+    <Layer />
+   </MaterialLayers>
   </Material>
   <Material Name="semi_shiny_metal" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.14799802,0.12752977,0.11392093" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
    <Textures>
@@ -25,9 +34,17 @@
    </Textures>
    <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
   </Material>
-  <Material Name="concrete" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.026548682,0.026548682,0.026548682" Specular="0.011881335,0.0096963281,0.0090214908" Emissive="0.0083731171,0.0065849568,0.0045597549" Opacity="1">
+  <Material Name="concrete" MtlFlags="524418" Shader="Illum" GenMask="100080000" StringGenMask="%GLOSS_MAP%TESSELLATION" SurfaceType="concrete" MatTemplate="" Diffuse="0.014310519,0.014310519,0.014310519" Specular="0.065753885,0.065753885,0.065753885" Emissive="0,0,0" Opacity="1">
    <Textures>
     <Texture Map="Diffuse" File="textures/concrete/ground/concrete_ground_b_diff.dds"/>
+    <Texture Map="Specular" File="textures/cement/concretesuperhighres.dds"/>
+    <Texture Map="Bumpmap" File="textures/cement/concrete_worn_tile_normal.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Chain_Link" MtlFlags="524418" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.30000001,0.30000001,0.30000001" Specular="0,0,0" Emissive="0,0,0" Opacity="1" AlphaTest="0.1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/architecture/fences/chain_link_01/fencechainlinklinks.dds"/>
    </Textures>
    <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
   </Material>

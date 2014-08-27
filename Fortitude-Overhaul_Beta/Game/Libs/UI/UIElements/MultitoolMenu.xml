@@ -17,8 +17,41 @@
 		<Event name="triggerChoices" fscommand="triggerChoices" desc="Triggers the setting/engaging of button/checkbox clicked, passes to appropriate port" >
 			<param name="varID" type="int" />
 		</Event>
+		<Event name="triggerCommunityFrontPageChoices" fscommand="triggerCommunityFrontPageChoices" desc="Triggers the setting/engaging of buttons clicked in the Community frontpage panel" >
+			<param name="varID" type="int" />
+		</Event>
+		<Event name="triggerCommunityItemChoices" fscommand="triggerCommunityItemChoices" desc="Triggers the setting/engaging of buttons clicked in the Community item giving panel" >
+			<param name="varID" type="int" />
+		</Event>
 		<Event name="setvehicle" fscommand="setvehicle" desc="Triggers the spawning of the vehicle chosen in the setVehicle event." >
 			<param name="chosenVehicle" type="string" />
+		</Event>
+		<!-- Dynamic Vehicle Part Events - Car -->
+		<Event name="spawnPlatformCar" fscommand="spawnPlatformCar" desc="Spawns the Car Platform" />
+		<Event name="randomizePartsCar" fscommand="randomizePartsCar" desc="Randomizes all slots" />
+		<Event name="changeBumper" fscommand="changeBumper" desc="Changes part dynamically for the bumper" >
+			<param name="bumper_number" type="int" />
+		</Event>
+		<Event name="changeGrill" fscommand="changeGrill" desc="Changes part dynamically for the grill" >
+			<param name="grill_number" type="int" />
+		</Event>
+		<Event name="changeHood" fscommand="changeHood" desc="Changes part dynamically for the hood" >
+			<param name="hood_number" type="int" />
+		</Event>
+		<Event name="changeWindshield" fscommand="changeWindshield" desc="Changes part dynamically for the front windshield" >
+			<param name="windshield_number" type="int" />
+		</Event>
+		<Event name="changeRoof" fscommand="changeRoof" desc="Changes part dynamically for the roof" >
+			<param name="roof_number" type="int" />
+		</Event>
+		<Event name="changeWindshieldRear" fscommand="changeWindshieldRear" desc="Changes part dynamically for the rear windshield" >
+			<param name="windshield_rear_number" type="int" />
+		</Event>
+		<Event name="changeTrunk" fscommand="changeTrunk" desc="Changes part dynamically for the trunk" >
+			<param name="trunk_number" type="int" />
+		</Event>
+		<Event name="changeBumperRear" fscommand="changeBumperRear" desc="Changes part dynamically for the rear bumper" >
+			<param name="bumper_rear_number" type="int" />
 		</Event>
 		<!--<Event name="beammeup_tele_loc" fscommand="beammeup_tele_loc" desc="Feeds and Triggers Position to Teleport to" >
 			<param name="locationChoice" type="string" />
@@ -62,6 +95,12 @@
 	<!-- Map these out as functions/variables from the UI, e.g. click to toggle godmode button, output the boolean for godmode, true/false -->
 		<Function name="setChoices" funcname="setChoices" desc="Grabs button/checkbox input and sets the choice for which setting you want to enable/disable" >
 			<param name="varID" type="int" desc="Grabs button/checkbox input and sets the choice for which setting you want to enable/disable" />
+		</Function>
+		<Function name="setCommunityFrontPageChoices" funcname="setCommunityFrontPageChoices" desc="Switch case spectrum for choices being pulled from Community panel" >
+			<param name="varID" type="int" desc="Switch case spectrum for choices being pulled from Community frontpage panel" />
+		</Function>
+		<Function name="setCommunityItemChoices" funcname="setCommunityItemChoices" desc="Switch case spectrum for choices being pulled from Community panel" >
+			<param name="varID" type="int" desc="Switch case spectrum for choices being pulled from Community item giving panel" />
 		</Function>
 		<Function name="spawnVehicle" funcname="spawnVehicle" desc="Var passed from GUI, grabs button input and selects the vehicle corresponding to button." >
 			<param name="vehicleChoice" type="string" desc="Var passed from GUI, grabs button input and selects the vehicle corresponding to button." />

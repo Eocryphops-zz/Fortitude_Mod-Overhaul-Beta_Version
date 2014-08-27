@@ -1,0 +1,23 @@
+<Material MtlFlags="524544" Name="shark_combat">
+  <SubMaterials>
+    <Material AlphaTest="0.02" Diffuse="0.7820,0.7820,0.7820" Emissive="0.35865393,0.35865393,0.35865393" GenMask="0" MatTemplate="" MtlFlags="524416" Name="skinShader" Opacity="1" Shader="UL_Test_Skin" Shininess="20" Specular="0.010397803,0.017936433,0.019917838" StringGenMask="" SurfaceType="">
+      <Textures>
+        <Texture File="characters/male/human/skin/skin_ddn.tif" Map="Bumpmap"/>
+        <Texture File="characters/male/human/skin/skin_d.tif" Map="Diffuse"/>
+      </Textures>
+      <PublicParams BlurScale="1" FresnelBias="0.69999999" FresnelPower="5" FresnelScale="12" IndirectColor="0.25,0.25,0.25" Melanin="0.89999998" RimStrenght="0.34999999" SelfShadowSoftening="15" SpecularStrenght="0.60000002" VertColorMaskW="0" VertColorMaskX="0" VertColorMaskY="56" VertColorMaskZ="0"/>
+    </Material>
+    <Material Diffuse="0.8000,0.8000,0.8000" Emissive="0.078056589,0.078056589,0.078056589" GenMask="0" MatTemplate="" MtlFlags="524416" Name="shirtShader" Opacity="1" Shader="UL_Character" Shininess="2" Specular="0.015175238,0.019917838,0.019917838" StringGenMask="" SurfaceType="">
+      <Textures>
+        <Texture File="characters/male/human/body/shark_combat/shirt_ddn.tif" Map="Bumpmap"/>
+        <Texture File="characters/male/human/body/shark_combat/shirt_d.tif" Map="Diffuse"/>
+        <Texture File="characters/male/human/body/shark_combat/shirt_m.tif" Map="Custom"/>
+      </Textures>
+      <PublicParams AlphaChoice="-1" AlphaRef="0" BloodBlendEnd="1" BloodBlendStart="0.5" BloodChoice="-1" Brightness0="1" Brightness1="0.30000001" Brightness2="1" Brightness3="1" Contrast0="0" Contrast1="0" Contrast2="0" Contrast3="0" DecalMaskIdChoice="0" DetailMaskIdChoice="0" FresnelBias0="0.25" FresnelBias1="0.1" FresnelBias2="0.25" FresnelBias3="0.25" FresnelPower0="4" FresnelPower1="3.2" FresnelPower2="4" FresnelPower3="4" FresnelScale0="1" FresnelScale1="16" FresnelScale2="1" FresnelScale3="1" Glossiness1="2" Glossiness2="1" Glossiness3="1" Hue0="0" Hue1="0" Hue2="0" Hue3="0" IndirectColor="0.25,0.25,0.25" Saturation0="1" Saturation1="1" Saturation2="1" Saturation3="1" SpecColor1="0.017936433,0.030256517,0.032875914" SpecColor2="0.31999999,0.02,0.02" SpecColor3="0.31999999,0.02,0.02" VertColorMaskW="0" VertColorMaskX="0" VertColorMaskY="0" VertColorMaskZ="0"/>
+    </Material>
+    <Material Diffuse="0.31118053,0.31118053,0.31118053" Emissive="0.078056589,0.078056589,0.078056589" GenMask="0" MatTemplate="" MtlFlags="524416" Name="lambert1" Opacity="1" Shader="Illum" Shininess="10" Specular="0.5,0.5,0.5" StringGenMask="" SurfaceType="">
+      <Textures/>
+      <PublicParams FresnelBias="1" FresnelPower="4" FresnelScale="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" GlossFromDiffuseContrast="1" GlossFromDiffuseOffset="0" IndirectColor="0.25,0.25,0.25"/>
+    </Material>
+  </SubMaterials>
+</Material>

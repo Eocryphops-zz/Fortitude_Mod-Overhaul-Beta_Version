@@ -1,0 +1,40 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Input:Key" pos="-710,-430,0" flags="0">
+   <Inputs entityId="0" Key="F9" NonDevMode="1"/>
+  </Node>
+  <Node Id="2" Class="Entity:SpawnArchetype" pos="380,-400,0" flags="0">
+   <Inputs Archetype="NPCs.PloppableSpikeBarricade" Name="" Pos="0,0,0" Rot="0,0,0" Scale="1,1,1"/>
+  </Node>
+  <Node Id="3" Class="Game:LocalPlayer" pos="-490,-290,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="5" Class="Entity:GetPos" pos="-120,-360,0" flags="0">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="6" Class="Start" pos="-720,-280,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="7" Class="HUD:DisplayDebugMessage" pos="920,-250,0" flags="0">
+   <Inputs entityId="0" message="Plop!" DisplayTime="2" posX="50" posY="50" fontSize="2" clr_Color="1,1,1" centered="0"/>
+  </Node>
+  <Node Id="9" Class="Vec3:AddVec3" pos="80,-220,0" flags="0">
+   <Inputs A="0,0,0" B="0,0,180"/>
+  </Node>
+  <Node Id="14" Class="Physics:RayCastCamera" pos="-170,-180,0" flags="0">
+   <Inputs offset="0,0,0" maxLength="10"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Spawn" portOut="Released" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="1" portIn="Get" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="14" nodeOut="1" portIn="go" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="2" portIn="Show" portOut="Succeeded" enabled="1"/>
+  <Edge nodeIn="5" nodeOut="3" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="5" portIn="A" portOut="Rotate" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="6" portIn="update" portOut="output" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="9" portIn="Rot" portOut="out" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="14" portIn="Pos" portOut="hitpoint" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

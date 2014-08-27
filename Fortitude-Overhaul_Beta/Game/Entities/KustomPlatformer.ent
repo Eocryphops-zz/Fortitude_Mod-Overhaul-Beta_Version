@@ -1,0 +1,5 @@
+<Entity
+ Name="KustomPlatformer"
+ Script="Scripts/Entities/KustomPlatform/kustomplatformer.lua"
+/>
+

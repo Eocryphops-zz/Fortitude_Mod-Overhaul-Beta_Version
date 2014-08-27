@@ -8,7 +8,7 @@
  <GameToken Name="Vector_Warehouse" Type="Vec3" Value="1237.362,950.46,94.303" Description="Snyder Trucking Warehouse(Warehouse) Teleport Position" LocalOnly="1"/>
  <GameToken Name="Vector_DanielFarm" Type="Vec3" Value="2263,1393.74,119.27" Description="Farmhouse (DanielFarm) Teleport Position" LocalOnly="1"/>
  <GameToken Name="Vector_Military" Type="Vec3" Value="1413.181,1275.946" Description="LifeLine DLC Military Outpost (Military) Teleport Position" LocalOnly="1"/>
- <GameToken Name="Vector_Outlands" Type="Vec3" Value="1211.101318,2472.471680,92.437500" Description="Outlands Base - Welcome to the Wasteland (OutlandsBase) Teleport Position" LocalOnly="1"/>
+ <GameToken Name="Vector_Outlands" Type="Vec3" Value="1133.81,2935.62,33.2707" Description="Outlands Base - Welcome to the Wasteland (OutlandsBase) Teleport Position" LocalOnly="1"/>
  <GameToken Name="Vector_RangerRot" Type="Vec3" Value="0,0,-118.653" Description="Ranger Station (Ranger) Teleport Rotation" LocalOnly="1"/>
  <GameToken Name="Vector_ChurchRot" Type="Vec3" Value="0,0,-93.58" Description="Church (Church) Teleport Rotation" LocalOnly="1"/>
  <GameToken Name="Vector_BigJohnRot" Type="Vec3" Value="0,0,53.957" Description="Little Red House down the hill from Church (BigJohn) Teleport Rotation" LocalOnly="1"/>
@@ -18,5 +18,5 @@
  <GameToken Name="Vector_WarehouseRot" Type="Vec3" Value="0,0,41.695" Description="Snyder Trucking Warehouse(Warehouse) Teleport Rotation" LocalOnly="1"/>
  <GameToken Name="Vector_DanielFarmRot" Type="Vec3" Value="0,0,-138.31" Description="Farmhouse (DanielFarm) Teleport Rotation" LocalOnly="1"/>
  <GameToken Name="Vector_MilitaryRot" Type="Vec3" Value="0,0,123.742" Description="LifeLine DLC Military Outpost (Military) Teleport Rotation" LocalOnly="1"/>
- <GameToken Name="Vector_OutlandsRot" Type="Vec3" Value="0,0,41.41" Description="Outlands Base - Welcome to the Wasteland (OutlandsBase) Teleport Rotation" LocalOnly="1"/>
+ <GameToken Name="Vector_OutlandsRot" Type="Vec3" Value="0,0,152.265" Description="Outlands Base - Welcome to the Wasteland (OutlandsBase) Teleport Rotation" LocalOnly="1"/>
 </GameTokensLibrary>

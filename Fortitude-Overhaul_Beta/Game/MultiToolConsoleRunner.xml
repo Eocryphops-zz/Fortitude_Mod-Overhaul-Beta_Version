@@ -1,0 +1,3 @@
+<ConsoleCommandContainer Name="MultiTool_ConsoleRunner">
+ <ConsoleCommand Value="zm_spawn 20" />
+</ConsoleCommandContainer>

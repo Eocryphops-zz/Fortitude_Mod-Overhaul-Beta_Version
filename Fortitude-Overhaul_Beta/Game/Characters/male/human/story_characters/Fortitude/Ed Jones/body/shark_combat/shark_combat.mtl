@@ -1,0 +1,21 @@
+<Material MtlFlags="524544" Name="shark_combat">
+  <SubMaterials>
+    <Material Diffuse="0.1,0.1,0.1" Emissive="0,0,0" GenMask="0" MatTemplate="" MtlFlags="524416" Name="pantsShader" Opacity="1" Shader="UL_Character" Shininess="10" Specular="0.1,0.1,0.1" StringGenMask="" SurfaceType="">
+      <Textures>
+        <Texture File="characters/male/human/skin/skin_d.tif" Map="Diffuse"/>
+      </Textures>
+      <PublicParams FresnelBias="0.69999999" FresnelPower="5" FresnelScale="1" IndirectColor="0.25,0.25,0.25" Melanin="0.89999998" RimStrenght="0.34999999" SpecularStrenght="0.60000002" VertColorMaskW="0" VertColorMaskX="0" VertColorMaskY="56" VertColorMaskZ="0"/>
+    </Material>
+    <Material Diffuse="0.3,0.3,0.3" Emissive="0.078056589,0.078056589,0.078056589" GenMask="0" MatTemplate="" MtlFlags="524416" Name="shirtShader" Opacity="1" Shader="UL_Character" Shininess="0" Specular="0.015175238,0.019917838,0.019917838" StringGenMask="" SurfaceType="">
+      <Textures>
+        <Texture File="characters/male/human/story_characters/Fortitude/Ed Jones/body/shark_combat/shirt_d.dds" Map="Diffuse"/>
+        <Texture File="characters/male/human/body/shark_combat/shirt_m.tif" Map="Custom"/>
+      </Textures>
+      <PublicParams AlphaChoice="-1" AlphaRef="0" BloodBlendEnd="1" BloodBlendStart="1" BloodChoice="-1" Brightness0="1" Brightness1="1" Brightness2="0.15000001" Brightness3="0.2" Contrast0="0" Contrast1="0" Contrast2="0" Contrast3="0" DecalMaskIdChoice="2.727" DetailMaskIdChoice="2.75" FresnelBias0="0.25" FresnelBias1="0.25" FresnelBias2="0.69999999" FresnelBias3="1" FresnelPower0="4" FresnelPower1="4" FresnelPower2="3" FresnelPower3="4" FresnelScale0="1" FresnelScale1="1" FresnelScale2="15.35" FresnelScale3="8" Hue0="0" Hue1="0" Hue2="-0.64099997" Hue3="0.25" IndirectColor="0.25,0.25,0.25" Saturation0="1" Saturation1="1" Saturation2="0.2" Saturation3="1" SpecColor1="0.0096963281,0.011126082,0.01266372" SpecColor2="0.01266372,0.015175238,0.017936433" SpecColor3="0.0077510267,0.011881335,0.011126082" VertColorMaskW="0" VertColorMaskX="0" VertColorMaskY="0" VertColorMaskZ="0"/>
+    </Material>
+    <Material Diffuse="0.31118053,0.31118053,0.31118053" Emissive="0.078056589,0.078056589,0.078056589" GenMask="0" MatTemplate="" MtlFlags="524416" Name="lambert1" Opacity="1" Shader="Illum" Shininess="1" Specular="0.5,0.5,0.5" StringGenMask="" SurfaceType="">
+      <Textures/>
+      <PublicParams FresnelBias="1" FresnelPower="4" FresnelScale="1" IndirectColor="0.25,0.25,0.25"/>
+    </Material>
+  </SubMaterials>
+</Material>
